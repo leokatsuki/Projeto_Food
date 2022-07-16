@@ -1,0 +1,87 @@
+.receitas{
+    @extend .pagina-formatada;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receitas-item-1{
+    max-width: 576px;
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+.receitas-item-2-cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+
+    @include responsive(){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include responsive-xs(){
+        grid-template-columns: 1fr;
+    }
+}
+
+.receitas-item-2-cards-card{
+    background-color: map-get($colors, "white" );
+    border: 1px solid #bacdd8;
+    padding: 8px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    img{
+        width: 100%;
+        border-radius: 12px;
+        height: 214px;
+        object-fit: cover;
+    }
+
+    h5{
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    p{
+        height: 150px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    button{
+        border: none;
+        padding: 12px 24px;
+        border-radius: 20px;
+
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        cursor: pointer;
+        color: map-get($colors, "red" );
+        background-color: #ffe0e0;
+
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background-color: map-get($colors, "red" );
+        color: #ffe0e0;
+    }
+  }
+
+  .receitas-item-2-cards-card-body{
+    padding: 16px 8px 8px 8px;
+
+    .checked{
+        color: orange;
+    }
+  }

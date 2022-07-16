@@ -1,0 +1,68 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+@mixin responsive() {
+    @media screen and (max-width: 960px){
+        @content;
+    }
+}
+
+@mixin responsive-xs() {
+    @media screen and (max-width: 600px) {
+        @content
+    }
+}
+
+.pagina-formatada{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    padding: 36px 16px;
+}
+
+$colors: ("red": #f73f3f, "bg": #f5e5d9, "white": white, "black": black);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: map-get($colors, "bg");
+}
+
+img, svg{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+
+
+@import 'partials/menu';
+@import 'partials/spacing';
+@import 'partials/inicio';
+@import 'partials/sobre';
+@import 'partials/favoritos';
+@import 'partials/receitas';
+@import 'partials/contatos';
+@import 'partials/footer';
+@import 'partials/receitas2';

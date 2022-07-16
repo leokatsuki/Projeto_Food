@@ -1,0 +1,105 @@
+.informacoes{
+    @extend .pagina-formatada;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+
+    @include responsive(){
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+}
+
+.informacoes-parte2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+
+    @include responsive(){
+        gap: 10px;
+    }
+}
+
+.informacoes-parte2-texto{
+    font-size: 30px;
+}
+
+.informacoes-parte2-icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.informacoes-parte2-icones-1, .informacoes-parte2-icones-2, .informacoes-parte2-icones-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    img{
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.instrucoes{
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 70px;
+
+    @include responsive(){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.instrucoes-preparo{
+    width: 900px;
+
+    @include responsive(){
+        width: auto;
+        margin: 0 20px;
+    }
+}
+
+.instrucoes-preparo-titulo{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.instrucoes-preparo-passos{
+    color: map-get($colors, "red" );
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.instrucoes-preparo-paragrafo{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.instrucoes-ingredientes{
+    width: 300px;
+}
+
+.instrucoes-ingredientes-titulo{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.instrucoes-ingredientes li{
+    font-weight: bold;
+}

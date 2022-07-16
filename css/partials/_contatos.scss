@@ -1,0 +1,64 @@
+.contatos{
+    @extend .pagina-formatada;
+
+    overflow: hidden;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(){
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        overflow: none;
+    }
+}
+
+.contatos-item-1{
+    h1{
+        font-size: 30px;
+    }
+
+    @include responsive(){
+        justify-content: flex-start;
+    }
+}
+
+.contatos-form{
+    display: flex;
+    flex-direction: column;
+
+    .contatos-form-label{
+        margin-top: 10px;
+    }
+    .contatos-form-input{
+        width: 400px;
+        height: 40px;
+        border-radius: 15px;
+        padding: 15px;
+        border: 1px solid map-get($colors, "red" );
+    }
+    
+    .textarea{
+        height: 150px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    
+    .contatos-form-button{
+        border-radius: 20px;
+        margin-top: 15px;
+        width: 90px;
+        padding: 10px;
+        background-color: map-get($colors, "red" );
+        border: none;
+        cursor: pointer;
+    }
+
+    @include responsive(){
+        margin: 0 auto;
+    }
+}
