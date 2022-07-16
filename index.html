@@ -4,9 +4,255 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Aprenda a fazer receitas rapidas e faceis de comidas doces, salgadas e com diversos ingrediente.">
+    <meta name="keywords" content="receitas, bolo, doce, chocolate, pudim, bombom, ingredientes, salgados">
+    <title>Food. | Melhores receitas em um só lugar.</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-menu">
+                <div class="logo">
+                   <a href="index.html"><img src="svg/Food..svg" onload="SVGInject(this)" /></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#favoritos" class="nav-link">Favoritos</a></li>
+                    <li><a href="#receitas" class="nav-link">Receitas</a></li>
+                    <li><a href="#contatos" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="" class="btn">Sign In</a>
+                <a href="" class="btn-secondary ml-2">Log In</a>
+            </div>
+            <div class="bx"></div>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="inicio-item-1 item-1">
+            <h1 class="px-1">
+                Texto Principal
+            </h1>
+            <p class="my-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis amet aperiam ipsa eos. Quibusdam harum, laboriosam in sapiente soluta laudantium provident sint eligendi ullam voluptas pariatur dolores repellat, nam officiis!
+            </p>
+            <div class="inicio-pesquisa item-2">
+                <input type="text" placeholder="Buscar..."/>
+                <button><img  src="svg/search.svg" alt="Buscar..."/></button>
+            </div>
+        </div>
+        <div class="inicio-item-2 item-3">
+            <div class="js-tilt">
+                <img src="svg/Male Chef.svg" class="inicio-imagem" onload="SVGInject(this)" />
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-item-1 item-1">
+            <div class="js-tilt">
+                <img src="svg/Dining in a restuarant.svg" class="sobre-imagem" onload="SVGInject(this)" />
+            </div>
+        </div>
+        <div class="sobre-item-2 item-2">
+            <h1 class="px-1">
+                Sobre nós
+            </h1>
+            <p class="my-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et recusandae, corporis laudantium deserunt iusto cupiditate eius cumque natus, velit sit! Impedit reiciendis fugiat, ex vero expedita tempore iusto facilis.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAVORITOS -->
+    <section class="favoritos" id="favoritos">
+        <div class="favoritos-item-1 item-1">
+            <h1>Receitas Populares</h1>
+        </div>
+        <div class="favoritos-item-2 item-2">
+            <div class="favoritos-item-2-card" id="conteudo-favoritos-card-1">
+                <div class="favoritos-item-2-img">
+                    <img src="img/boloCenoura.jpeg" alt="">
+                </div>
+                <div class="favoritos-item-2-content">
+                    <div class="favoritos-details">
+                        <h2>Bolo de cenoura</h2>
+                        <div class="favoritos-btn">
+                            <a href="receitas/boloCenoura.html"><button>Ver receita</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="favoritos-item-2-card" id="conteudo-favoritos-card-1">
+                <div class="favoritos-item-2-img">
+                    <img src="img/bombomTravessa.jpeg" alt="">
+                </div>
+                <div class="favoritos-item-2-content">
+                    <div class="favoritos-details">
+                        <h2>Bombom de travessa</h2>
+                        <div class="favoritos-btn">
+                            <a href="receitas/bombomTravessa.html"><button>Ver receita</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="favoritos-item-2-card" id="conteudo-favoritos-card-1">
+                <div class="favoritos-item-2-img">
+                    <img src="img/pudim.jpeg" alt="">
+                </div>
+                <div class="favoritos-item-2-content">
+                    <div class="favoritos-details">
+                        <h2>Pudim</h2>
+                        <div class="favoritos-btn">
+                            <a href="receitas/pudim.html"><button>Ver receita</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECEITAS -->
+    <section class="receitas" id="receitas">
+        <div class="receitas-item-1 item-1">
+            <h1>
+                Receitas
+            </h1>
+        </div>
+        <div class="receitas-item-2 item-2">
+            <div class="receitas-item-2-cards">
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/boloCenoura.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Bolo de cenoura</h5>
+                        <p>Lorem ipsum dolor sit am elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/boloCenoura.html" ><button>Ver receita</button></a>
+                    </div>
+                </div>
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/bombomTravessa.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Bombom de travessa</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/bombomTravessa.html" ><button>Ver receita</button></a>
+                    </div>
+                </div>
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/pudim.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Pudim</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/pudim.html" ><button>Ver receita</button></a>
+                    </div>
+                </div>
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/boloCenoura.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Bolo de cenoura</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/boloCenoura.html" ><button>Ver receita</button></a>
+                    </div>
+                </div>
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/bombomTravessa.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Bombom de travessa</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/bombomTravessa.html" ><button>Ver receita</button></a>
+                    </div>
+                </div>
+                <div class="receitas-item-2-cards-card">
+                    <img src="img/pudim.jpeg" alt="">
+                    <div class="receitas-item-2-cards-card-body">
+                        <h5>Pudim</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ut impedit quos reprehenderit beatae ab minus illo quaerat rerum recusandae cupiditate, consequuntur similique vel sequi soluta hic. Perspiciatis, saepe!</p>
+                        <a href="receitas/pudim.html"><button>Ver receita</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- CONTATOS -->
+    <section class="contatos" id="contatos">
+        <div class="contatos-item-1 item-1">
+            <h1 class="">
+                Entre em contato conosco
+            </h1>
+        </div>
+        <div class="contatos-item-2 item-2">
+            <form action="" class="contatos-form mr-4">
+                <label class="contatos-form-label" for="nome">Nome</label>
+                <input type="text" class="contatos-form-input" name="nome" placeholder="Leonardo Katsuki" required>
+
+                <label class="contatos-form-label" for="tel">Telefone</label>
+                <input type="tel" class="contatos-form-input" name="tel" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label class="contatos-form-label" for="email">Email</label>
+                <input type="email" class="contatos-form-input" name="email" placeholder="fulano@mail.com" required>
+
+                <textarea name="texto" class="contatos-form-input textarea" cols="30" rows="10" placeholder="Deixe sua opinião"></textarea>
+
+                <input type="submit" class="contatos-form-button" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-item-1">
+            <div class="footer-container-logo">
+                <img src="svg/Food..svg" alt="logo">
+            </div>
+    
+            <div class="footer-container-item">
+                <h2>Contatos</h2>
+                <a href="#">aabbcc@food.com</a>
+                <a href="#">(11)91111-1111</a>
+            </div>
+    
+            <div class="footer-container-item">
+                <h2>Mapa do site</h2>
+                <a href="#inicio">Home</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#favoritos">Favoritos</a>
+                <a href="#receitas">Receitas</a>
+                <a href="#contatos">Contatos</a>
+            </div>
+    
+            <div class="footer-container-item">
+                <h2>Siga-nos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="svg/instagram.svg" alt="instagram"></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="svg/facebook.svg" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="svg/twitter.svg" alt="twitter"></a></li>
+                </ul>   
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <script>
+        $('.js-tilt').tilt({
+            perspective: 2000,
+            scale: 1.05
+        });
+    </script>
+
 </body>
 </html>
