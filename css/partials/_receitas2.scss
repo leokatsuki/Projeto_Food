@@ -60,9 +60,14 @@
 
     @include responsive(){
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
+        .instrucoes-ingredientes-titulo{
+            margin-left: -20px;
+        }
 
+        .instrucoes-ingredientes{
+            margin-left: 40px;
+        }
     }
 }
 

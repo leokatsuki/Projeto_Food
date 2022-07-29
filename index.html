@@ -7,6 +7,7 @@
     <meta name="description" content="Aprenda a fazer receitas rapidas e faceis de comidas doces, salgadas e com diversos ingrediente.">
     <meta name="keywords" content="receitas, bolo, doce, chocolate, pudim, bombom, ingredientes, salgados">
     <title>Food. | Melhores receitas em um só lugar.</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,28 +18,21 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar">
-            <div class="nav-menu">
-                <div class="logo">
-                   <a href="index.html"><img src="svg/Food..svg" onload="SVGInject(this)" /></a>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li><a href="#favoritos" class="nav-link">Favoritos</a></li>
-                    <li><a href="#receitas" class="nav-link">Receitas</a></li>
-                    <li><a href="#contatos" class="nav-link">Contatos</a></li>
-                </ul>
-            </div>
-            <div class="nav-btn">
-                <a href="" class="btn">Sign In</a>
-                <a href="" class="btn-secondary ml-2">Log In</a>
-            </div>
+            <div class="logo"><a href="index.html"><img src="svg/Food..svg" onload="SVGInject(this)" /></a></div>
             <div class="bx"></div>
+            <ul class="menu">
+                <li><a href="#ancora1">Inicio</a></li>
+                <li><a href="#ancora2">Sobre</a></li>
+                <li><a href="#ancora3">Favoritos</a></li>
+                <li><a href="#ancora4">Receitas</a></li>
+                <li><a href="#ancora5">Contatos</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- INICIO -->
-    <section class="inicio" id="inicio">
+    <div id="ancora1"></div>
+    <section class="inicio">
         <div class="inicio-item-1 item-1">
             <h1 class="px-1">
                 Texto Principal
@@ -47,8 +41,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis amet aperiam ipsa eos. Quibusdam harum, laboriosam in sapiente soluta laudantium provident sint eligendi ullam voluptas pariatur dolores repellat, nam officiis!
             </p>
             <div class="inicio-pesquisa item-2">
-                <input type="text" placeholder="Buscar..."/>
-                <button><img  src="svg/search.svg" alt="Buscar..."/></button>
+                <input type="text" class="searchbar" placeholder="Buscar..."/>
             </div>
         </div>
         <div class="inicio-item-2 item-3">
@@ -59,7 +52,8 @@
     </section>
 
     <!-- SOBRE -->
-    <section class="sobre" id="sobre">
+    <div id="ancora2"></div>
+    <section class="sobre">
         <div class="sobre-item-1 item-1">
             <div class="js-tilt">
                 <img src="svg/Dining in a restuarant.svg" class="sobre-imagem" onload="SVGInject(this)" />
@@ -76,7 +70,8 @@
     </section>
 
     <!-- FAVORITOS -->
-    <section class="favoritos" id="favoritos">
+    <div id="ancora3"></div>
+    <section class="favoritos">
         <div class="favoritos-item-1 item-1">
             <h1>Receitas Populares</h1>
         </div>
@@ -124,7 +119,8 @@
     </section>
 
     <!-- RECEITAS -->
-    <section class="receitas" id="receitas">
+    <div id="ancora4"></div>
+    <section class="receitas">
         <div class="receitas-item-1 item-1">
             <h1>
                 Receitas
@@ -185,7 +181,8 @@
     </section>
     
     <!-- CONTATOS -->
-    <section class="contatos" id="contatos">
+    <div id="ancora5"></div>
+    <section class="contatos">
         <div class="contatos-item-1 item-1">
             <h1 class="">
                 Entre em contato conosco
@@ -244,6 +241,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
